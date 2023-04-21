@@ -8,7 +8,7 @@ A command-line tool to download YouTube videos (shorts included) using the `pytu
 
 ## Usage
 
-`python downloader.py <link> [path]\`
+`python downloader.py <link> [path]`\
 or\
 `python3 downloader.py <link> [path]`
 

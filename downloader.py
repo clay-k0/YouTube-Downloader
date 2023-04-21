@@ -57,10 +57,12 @@ def create_directory(path):
     else:
         print(f"\nFound directory {path}")
 
+
 def download_video(stream, path):
     print(f"\nDownloading Video...")
     stream.download(output_path=path)
     print(f"Successfully Downloaded Video To {path}")
+
 
 def process_video(path, yt, choice):
     """Download video or audio based on user's choice."""
@@ -74,18 +76,24 @@ def process_video(path, yt, choice):
         print(f"Error: {e}")
 
 
-
-
 def main():
+    # Parse command line arguments
     link, path = parse_arguments()
 
     try:
+        # Create YouTube object
         yt = YouTube(link)
+
+        # Create directory if it doesn't exist
         create_directory(path)
+
+        # Get user choice
         choice = get_user_choice(f"\nChoose An Option:\n"
-                        "1. Download Video\n"
-                        "2. Download Audio\n"
-                        "=> ", ['1', '2'])
+                                 "1. Download Video\n"
+                                 "2. Download Audio\n"
+                                 "=> ", ['1', '2'])
+
+        # Download video or audio
         process_video(path, yt, choice)
     except (pytube.exceptions.RegexMatchError, pytube.exceptions.VideoUnavailable) as e:
         print(f"Error: {e}")

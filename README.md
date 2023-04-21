@@ -1,4 +1,5 @@
 # YouTube-Downloader
+
 A command-line tool to download YouTube videos (shorts included) using the `pytube` library.
 
 ## Requirements
@@ -19,7 +20,11 @@ When you run the script, you will be prompted to choose between downloading the 
 
 ## Example
 
-`python3 downloader.py https://www.youtube.com/watch?v=Ekd9rPGzbVs vids/`
+`python3 downloader.py https://www.youtube.com/watch?v=Ekd9rPGzbVs Videos`
+
+## Contributions
+
+If you would like to contribute to this project, feel free to submit a pull request.
 
 ## License
 

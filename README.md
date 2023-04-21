@@ -19,7 +19,7 @@ When you run the script, you will be prompted to choose between downloading the 
 
 ## Example
 
-`python3 downloader.py https://www.youtube.com/watch?v=Ekd9rPGzbVs Videos`
+`python3 downloader.py https://www.youtube.com/watch?v=Ekd9rPGzbVs vids/`
 
 ## License
 
